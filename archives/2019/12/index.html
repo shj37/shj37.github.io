@@ -707,6 +707,32 @@ Use the CSS border property to add a border to the table.
 </footer>
 
         
+    
+    <!-- Valine -->
+    <div class="vcomments"></div>
+    <script src="//unpkg.com/valine"></script>
+    <script>
+        var GUEST = ['nick','mail','link'];
+        var meta = '';
+        meta = meta.split(',').filter(function (item) {
+            return GUEST.indexOf(item)>-1;
+        });
+        var avatarcdn = 'https://gravatar.loli.net/avatar/' == true;
+        new Valine({
+            el: '.vcomments',
+            notify: "false",
+            verify: "false",
+            app_id: "",
+            app_key: "",
+            placeholder: "请写评论或答案",
+            avatar:"identicon",
+            recordIP:"false",
+            visitor: "true"
+        });
+    </script>
+
+
+
 
 
     

@@ -160,6 +160,12 @@
 
                 
                 
+   <span id="/2019/11/27/hello-world/" class="leancloud-visitors" data-flag-title="Hello World">
+   <i class="fa fa-eye"></i>
+   <span class="post-meta-item-text">阅读次数: </span>
+   <i class="leancloud-visitors-count">1000000</i>
+   </span>
+
 
                 
    <div class="article-counter">
@@ -260,6 +266,32 @@ Quick",
 </article>
 
     <section id="comments">
+    
+        
+    <!-- Valine -->
+    <div class="vcomments"></div>
+    <script src="//unpkg.com/valine"></script>
+    <script>
+        var GUEST = ['nick','mail','link'];
+        var meta = '';
+        meta = meta.split(',').filter(function (item) {
+            return GUEST.indexOf(item)>-1;
+        });
+        var avatarcdn = 'https://gravatar.loli.net/avatar/' == true;
+        new Valine({
+            el: '.vcomments',
+            notify: "false",
+            verify: "false",
+            app_id: "",
+            app_key: "",
+            placeholder: "请写评论或答案",
+            avatar:"identicon",
+            recordIP:"false",
+            visitor: "true"
+        });
+    </script>
+
+
     
     </section>
 
@@ -522,6 +554,32 @@ Quick",
 </footer>
 
         
+    
+    <!-- Valine -->
+    <div class="vcomments"></div>
+    <script src="//unpkg.com/valine"></script>
+    <script>
+        var GUEST = ['nick','mail','link'];
+        var meta = '';
+        meta = meta.split(',').filter(function (item) {
+            return GUEST.indexOf(item)>-1;
+        });
+        var avatarcdn = 'https://gravatar.loli.net/avatar/' == true;
+        new Valine({
+            el: '.vcomments',
+            notify: "false",
+            verify: "false",
+            app_id: "",
+            app_key: "",
+            placeholder: "请写评论或答案",
+            avatar:"identicon",
+            recordIP:"false",
+            visitor: "true"
+        });
+    </script>
+
+
+
 
 
     
