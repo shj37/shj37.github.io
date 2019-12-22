@@ -181,16 +181,16 @@
         <div class="article-entry" itemprop="articleBody">
             <div class="__quiz__"><div class="__quiz_head__">A Funny Test</div><div class="__quiz_prob__"><div class="__quiz_title__"><!-- Single choice question -->
 <p>Which of the following characters I like <strong>best</strong>?</p>
-</div><label><input type="radio" name="chfiiigcdfjdijhhg" data-ans="false"><p>Izumi Sagiri (和泉 紗霧)</p>
-</label><label><input type="radio" name="chfiiigcdfjdijhhg" data-ans="false"><p>Kousaka Kirino (高坂 桐乃)</p>
-</label><label><input type="radio" name="chfiiigcdfjdijhhg" data-ans="true"><p>Zero Two (02)</p>
-</label><label><input type="radio" name="chfiiigcdfjdijhhg" data-ans="false"><p>Takanashi Rikka (小鳥遊 六花)</p>
+</div><label><input type="radio" name="fjbdcjccdejdfgjg" data-ans="false"><p>Izumi Sagiri (和泉 紗霧)</p>
+</label><label><input type="radio" name="fjbdcjccdejdfgjg" data-ans="false"><p>Kousaka Kirino (高坂 桐乃)</p>
+</label><label><input type="radio" name="fjbdcjccdejdfgjg" data-ans="true"><p>Zero Two (02)</p>
+</label><label><input type="radio" name="fjbdcjccdejdfgjg" data-ans="false"><p>Takanashi Rikka (小鳥遊 六花)</p>
 </label><div class="__quiz_answer__">答案:</div></div><div class="__quiz_prob__"><div class="__quiz_title__"><!-- Multiple choice question -->
 <p>Select all books written by <em>Fushimi Tsukasa</em> (伏見 司).</p>
-</div><label><input type="checkbox" name="jcgabbhfgjcegeih" data-ans="true"><p>Oreimo (俺の妹がこんなに可愛いわけがない)</p>
-</label><label><input type="checkbox" name="jcgabbhfgjcegeih" data-ans="true"><p>Eromanga Sensei (エロマンガ先生)</p>
-</label><label><input type="checkbox" name="jcgabbhfgjcegeih" data-ans="false"><p>Yosuga no Sora (ヨスガノソラ)</p>
-</label><label><input type="checkbox" name="jcgabbhfgjcegeih" data-ans="false"><p>The Three-Body Problem (三体)</p>
+</div><label><input type="checkbox" name="fabibeahiffhdhhj" data-ans="true"><p>Oreimo (俺の妹がこんなに可愛いわけがない)</p>
+</label><label><input type="checkbox" name="fabibeahiffhdhhj" data-ans="true"><p>Eromanga Sensei (エロマンガ先生)</p>
+</label><label><input type="checkbox" name="fabibeahiffhdhhj" data-ans="false"><p>Yosuga no Sora (ヨスガノソラ)</p>
+</label><label><input type="checkbox" name="fabibeahiffhdhhj" data-ans="false"><p>The Three-Body Problem (三体)</p>
 </label><div class="__quiz_answer__">答案:</div></div><button class="__quiz_btn__">✔ 提交答案</button><div class="__quiz_sol__"></div></div><script src="/js/quiz.min.js"></script>
         </div>
         <footer class="article-footer">
@@ -532,24 +532,19 @@ O",
     
     <!-- Valine -->
     <div class="vcomments"></div>
-    <script src="//unpkg.com/valine"></script>
-    <script>
-        var GUEST = ['nick','mail','link'];
-        var meta = '';
-        meta = meta.split(',').filter(function (item) {
-            return GUEST.indexOf(item)>-1;
-        });
-        var avatarcdn = 'https://gravatar.loli.net/avatar/' == true;
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="/js/Valine.min.js"></script>
+    <script type="text/javascript">
+    
         new Valine({
-            el: '.vcomments',
-            notify: "false",
-            verify: "true",
+            lang: 'zh-cn',
+            admin_email: '填写博主邮箱',
+            el: '.vcomments' ,
             appId: "VEem8DykTtO9eYIejGS03jKH-gzGzoHsz",
             appKey: "V8j9xbuf28RQENwo5MTc33k0",
-            placeholder: "请写评论或答案",
-            avatar:"identicon",
-            recordIP:"false",
-            visitor: "false"
+            emoticon_url: 'https://cloud.panjunwen.com/alu',
+            emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+            placeholder: "请写评论或答案"
         });
     </script>
 
