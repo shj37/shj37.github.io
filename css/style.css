@@ -847,7 +847,7 @@ code {
   background-position: center;
 }
 #recent-post li .item-thumbnail .thumbnail .thumbnail-none {
-  background-image: url("images/thumb-default-small.png");
+  background-image: url("images/logo_trans_small.png");
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
@@ -1009,7 +1009,7 @@ code {
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
-  background-image: url("images/thumb-default.png");
+  background-image: url("images/logo_trans.png");
 }
 .article-summary .article-summary-inner .article-title {
   margin-bottom: 10px;
