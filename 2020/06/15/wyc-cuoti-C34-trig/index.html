@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>wyc-错题总结-C34-三角函数 | EduUnited学用</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="wyc,三角函数,C34" />
+    
+    <meta name="description" content="学员资料">
+<meta name="keywords" content="wyc,三角函数,C34">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wyc-错题总结-C34-三角函数">
+<meta property="og:url" content="http:&#x2F;&#x2F;eduunited.org&#x2F;2020&#x2F;06&#x2F;15&#x2F;wyc-cuoti-C34-trig&#x2F;index.html">
+<meta property="og:site_name" content="EduUnited学用">
+<meta property="og:description" content="学员资料">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-09-07T09:44:31.529Z">
+<meta name="twitter:card" content="summary">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%BB%A5%E8%87%B4%E7%94%A8/">学以致用</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E7%BB%8F%E6%B5%8E%E5%AD%A6/">经济学</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E8%8B%B1%E8%AF%AD/">英语</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/">学员区</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/A2%E7%BB%8F%E6%B5%8E/">A2经济</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/AS%E7%BB%8F%E6%B5%8E/">AS经济</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/%E9%94%99%E9%A2%98%E6%80%BB%E7%BB%93/">错题总结</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E6%96%B0%E9%97%BB/">新闻</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E6%96%B0%E9%97%BB/%E6%95%99%E8%82%B2/">教育</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%B5%84%E6%96%99/">资料</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%B5%84%E6%96%99/%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D/">大学排名</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/">学员区</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/%E9%94%99%E9%A2%98%E6%80%BB%E7%BB%93/">错题总结</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-wyc-cuoti-C34-trig" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        wyc-错题总结-C34-三角函数
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/2020/06/15/wyc-cuoti-C34-trig/" class="article-date">
+         <time datetime="2020-06-14T21:35:14.000Z" itemprop="datePublished">2020-06-15</time>
+      </a>
+    </div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/C34/" rel="tag">C34</a>, <a class="tag-link" href="/tags/wyc/" rel="tag">wyc</a>, <a class="tag-link" href="/tags/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/" rel="tag">三角函数</a>
+    </div>
+
+                
+
+                
+   <div class="article-counter">
+      <i class="fa fa-file-word-o"></i>
+      <span class="post-count-item-text">本文字数: </span>
+      <span class="post-count">8</span>
+      <i class="fa fa-clock-o"></i>
+      <span class="post-time-item-text">阅读时长: </span>
+      <span class="post-count">1 分钟 </span>
+   </div>
+
+
+                <span id="busuanzi_container_page_pv">
+                    <i class="fa fa-eye"></i> 总阅读量<span id="busuanzi_value_page_pv"></span>次
+                      </span>
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <div id="hexo-blog-encrypt" data-wpm="密码错误, 请重新输入." data-whm="Oh, these decrypted content cannot be verified, but you can still have a look."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="请输入进入密码!" /><label>请输入进入密码!</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="e4589b214f3ede53c46fba59f78c8d700747d996d148c5908abddebae44ccbda">3d097490e6b75e0b689ae5fc184f7fe4934685bfce4aaf15b34583d5e5ef479fbce688235e9be8483090ae35a4ba4bcfaa9f1a421b37dc7a09510be935b848d4fd805ef9beba09131b3bd95f6905096f75efbcdce581acf8a33e203a79d5e2bfbbe4ff64d6b21602ad5c164c6ad7682dd9f29ee0433c37e77e10655d7fa70f1a34958de55a0b5d3ad17d9097070281c906bda27ee774b3d0ad079af5cc63b48b3a2b3fb11fe1f55bf38e935cb86753c02c6b7ddc02bccd3b6f1c30640f5044948d22ce33d00a8aeb09c6f7549905876b9a6f656311ed6e2386d1a0226a83410b3f6e33593d2ee24ae693da5a91f8e2be1e2e9929f77f853304cf8d48203ce08d3a5d0f987c317b0460d1a02123678aff5526718209c13dac2d90b27e2c47d5a1109f9435437104fd174c7fd629192733ac00c7c367d9ebfa5687a92e9ccd8c45445fa6b328e909c737553994118ac0486d03819a9dd48d8f16ac4eb765a000b63b21348cd7cea62f0067389c94f8724ba117c7f28212ba74fe9c405a74141b1dd9afe7b25325f5a0b71466f8a3a2dfcd9bed6e0f16aeb8ab8b46f1d99477f2422764ea88386bde79873bb3124f2051b6f379d8b894a874792c948a973dd20c12edfd9df10cc685e7ec675ac3fd85207a64c9abc7f8e6bee851ed2deb1bf190b353a1b1269ebf950162e0bb6bb5300b6928f115dd1680fcc1a3459fe4c914d201eff3f708a0b3ea2b21cf66858f406f9979adb9fb4bb331106eddbb77b97626840f80c75d9a891b1e0ea46b2cc0728780b15468c87138a89f858669a79be4f0fbe428cde51a227562196492f0d0101623e6e81c4f46bdab4ee7586017a56bb90840235909d4a4b2517d00a0808817d602ba1d3c44083316bab83a26ea13546c96547591a365993366320ff8a28a721e5f206fc5fbf58197f1558c47734e211770ee77c76d95d29b570ad3fac355ca7959624fc05654ca3b4759f577730deee27fc14ed8ea827b371938c3080b1bcf637f0bdf5ef5bb043cea326068670994a0ea1f0a6bca4bfd080ea8ac3574b48c512e7d2b38ae13701fdca970cfdeb82e49443b57035a0b853a5af66d855c83306bb44ec38cf22479a9068eeca11f29d55509dd0fa1e390382559875a8fd7e5c247d4636b09c17e6b75e2f71b84214391fa2b4a07a5eedea415604f88a66d582e43798ae8b1837a33c210ed8f4fd28077efa9eb0724e5dad762f7f6a7b6e51b310c08808fcd287b590d92e7289bf8214bea4761a907ae51f2665258d9ad2a7f6010765d0ee1a482a47bd6a33063f727a8899ebdebbb4700cbae1a07fc85badc24d0fc61cb6c773d66a0eebc06364fd31b53df660e2cc762694228d6914e914971ef6945283ded0b596dbc230b9574e857cc2149fb072effb8c60c6cb18269814d720ef3e5c98fdf7ff925045a2618015116836ed179917112a172db967baed9cd763ff85cb17422355a8bbe92a889e0c0d8baa554ef0484202f5e6a9ef86325187f49213d2ee5498e92991234a9c53c4adc1a603bb5282879ca2e6aa69194edaae360b5faf65d654d207230278ff5b886587bceb51f01251e4167c70754145c8891fa27f0729ac7722bbf4d7c66fc23f8581f8691871fae905457860d13dcfa8e587f1ad796a6980ea50dfcef415c0985c73d0f028f87f517299a24316ed2a67320de181d73d26d64a88365ccaa243efecf27196444976e10929cbcac7fed7056a852e58688a5daf934cf074ef809885cfffeeb2a17e3ff334ef42faf7ae3b4890fe95fda962cc7bef2d922c0f502c56b88463433b08b2154180f29ac46921bbdb089b7fba87f10a03fbfb3efe93e15ceb573c77592452f350d71b9f7c8dc02914672e3756fb432afe9da349f060134b62392a20c28c7489c0a7451ed648ceab89bd6fc2a92ba270efa1b50bd6ab18f26d203eaf0151171efc3b12057d32e576a2868592a108c557f8f4080d523b57ff106096f7d3094fb71397119fc39a5801d9b1072f49e2618e738e153ece95d9baa5501c78046c4600a1fa3ac912006e9c427a20370c8bb69359dd78c0815581f9ed00d76b20cc56e26c25201960c31e5a9aaf6e490fbdca70e589c203f9997fb842a4a976267f9cc4b77961657d1527a46ed75ab88526a3053e3a9b90334626b5866f2cb33eb8e424405e50b85e064e1a90a5d44a871bf0a25aa6cd6b89d58f28f35b6b2d2e8b17eac8c77b7e04e670f67f520aea1f4cce3bce16a32361291c6672c2dd8433e3f0ae1791585d7579a38fc916ab72efcc973cf90e97a19712451670ab6b2432d04f3b87208a1f36858b38a842ad3828fc0e402ff638ac220a8678eb33b237e6dc9673595556efc01edcd4b24ad38d4f414236dd8b13b6257feede04eec8096807695e456efdd16eec4018a5117f8053e77268e67928462e431e3c8cda5fd7f186f0dc6581f74edf3a6891e9e6b6c6b681225f741c57d09c9a57eb022c528357908bc08b1dd2d62321ada6eb1a1ddae2ef6fa179eb05783fa2e93edeaa6cddc327655c438021d6d63e387c71b815a1af7790c552655de953762f962a811920891b45348446da96b3a38aa0592df0fbcae7462cf843f41bbc3c1c7dc337baa85d4f912bd558acc6af893a1b84acb63bf1f05df2bdcf92b997fe39b98b95409fce96ec6066db6b2bbd9b9dc10a1d36c57201404f5e056fbd4281064f0b181496091de7b5be0450f60eefa724fe801df6ccdd64826a1d481b4cbfa50f81a626a88cc0b96371f0ce7865dd4c9e513cabe0d779355b197001ac97208a6b1e4b8681fa458c279c970be6339b33ae1bfb69769867096bc9169491d05dcdfff098f2f8e72142da0f8f24c8ef9d15bd9b7c61e6538f340b1d64041cf2fa583e194205dbb36052f1117134a0a3c760dc108c7df8bb9fd64d0ae2d8a5994df91f4d81faeb10affdc0b0abfef1631fda31985ff64057707fdc81f5dc7f3274122f3b7c8ee8967477e488a94a5bdc6b64e913942abb290e60a490f8ce0f9d6e9394f113ff3e30a7a8e18145ab67c55232ac89722fcce9278fc091239f2d56f6f47889e977466406aec065d7c7338f6bdaf3a83160994d8a30cba7eee3e9e7cbfe8ecf11f14d3eef69a21e9b2a0bfcf308102357bce835fbe29c287a3c1251901b53ddea2d8378e6927f94645a4fa37597d3e4d7b5b591bd9c5222f613d8ed45cb5a69742debf168e76a8b6a49d4afceb829f3952e3dece19533e07a3f704ba919f7fae068cd37c9457b75d98080e938dc9875fd371eb0e14d9b34a1dcbfed8d1a0e5d88691c9af8b6a345dc5c33c0ee188dd03a31d0f604e43bdc1b94b69d97538b432096b0cee6a8d5bbca31d2b8418f0150bc4e1713a0b9fb68696ebfb5dfd9664d02b9b81bb32acc3f6954bb7e7570a5d6e97a19a1511d8d43f764b1c76ee85943e63657404fbb2b7956dedbcfa143d65b4eb909ddca1d8601b4e9d5765fdf41b3a94353ffcb15119aa0d3ce2c47cd466011c594ef7d18344518794a8e4d5cf08398c4ebeefe91c2820685e8432d896053f7e524dd00fd4682e37b42ce09843bfc18089eaccdb59aa049285c6de5d18590015fe85d45e9dde10df171a1e1d3c64378fa50a47ec74d9e4b520f0c8eb39714babbd8b0beca53b7014ff7fe8ffbfec780ac5e07c0634d8d3e901c56f70a983fd2aea291737ee500d8733152c24dde56fd5d746c67a476357a23e097032c9621dd72b1f1fb66a8e8ce5f791fb861406d2ad577ac9e4209139c523afa73420beb281a3baf0cccee4bffc27fdb945e9717383d48389f50b4a7c0d247354e6ff49d6bef9e8dcc738364b55f42fe0eae18917ab94407becd8a152ddc80e647209ad3b1c8febc2357a48493f881af5ca56419a901bde4a8f6bff8d0cdaac848e79a4b70a29ec5f475b2e8d379a35196439066ae35e85e5a011262f1d58e739f50b49fa239e7c0de03590e3ec8f517e3ab2c47d90b77047c4c2baeefc34b4c0b7cbe1dcb35d3e4bb9656b8790685f3c89ce596f693fe685d660888037f87414dbded16aeeee209949a7c141e38e362b66bec6ce67640d8f368f023f2ed83720f92d416e4108fad205970ad60b1baec5aacd3282b3bc8ff7a58c2dd9b3fedf33bd15f08066957cbd570af53df04f9adb6b3a354089302e4c67d7961fae6afadf872868a8d648ae2176d5ec01ea33b45289dfc8808c2f78108004454e4be192ba0c41cbf87cab1ec3d0250baeb11d2ac238839aa3e42660f2c1e7e18f061d8777707de597bf4bae3634e871fd56a24d8e0f6757e71623322c7f6a363764173be154dc03448a2c739d633d8cd850f9c3893e92e87a18365db6a1adbccc4c6b2ff469a49e2d96f10cfe95b72a1974d6b42a496cd8b1109358b9f1daf9cf5a756c3c7c40f14b0fd020d8c9b8cdd0a786d4c6482ee7c1ce20c3af0a452f0c4cf835e2d983bbec65850ea92ec9673dc278acc7b38d1249fb1653214d3d02be20f03128990e4af156050ef7be950a3f68e5be7ea8fa5c8d371896e2323d7b380819e8d99de96796e78347bdc7749aa01c2e9898ad80517f851dd655f7e81548f1fbdbd00b702399aa12448e63223d24406e5f88ec623b3a02aeb0fe2a2c228933f43ee9c29541a6c1e25a612698886bbcb3ede4ba6554b67914151e8ea6492c37994cdbb678e3207ffa01879a71a0da490fd6c291de2d87afc2799a76e8808eec3f990e187e4ebf8281d094ec1132658175bf31df58282478084e5b9fcd6cbd1e26c5707afd753a3f606e4963f55f4b69d1bf6b5af2cb08706bfec2c7a236e514a71b9f08520ca8f7d4314a79b7b4915d01252e6ea240eff93d058e359540179c67ab39cae3ce3bf33be33f12327d0007f84b7b3ea0ff3e5e818216dc0261e4f9f8c88c71ad60a7bdffbdc2d9400b4c169aba65d82a19a6d7f583dbc8aed92e981589f71bf8d66ebc4a5730fa49a984a0048e90bd383cde288ce9e15906a391c40b8c9e196b3305732cfb91bd153ec96f9e2c53e04cd6fd716b58b736fb1f3354bf600ef2852f7906931fe19a9df6d2ecd152219c6a06b8a85e0cc1383fe569b0e6a3cf0daf31544b8404c402b5909897d2a9c6a96d8050a057c54f1a36ff3f9efce933230493c81a582d4eed7c2a0d749a65eb57e152c8a457526dcaefa8f41846ce300ac29c4e6cc52cb1a07a6a06963a032a09b2cd290e6207807f84c2c9545a421b61523f6f5b81751e535aee8fba6055655c380dd5077420ca89a4301dfd1936872ceba57737f401fe6ea20ad080bc5b2700dce55f463347b2ba57b8069b10f6ff01b2cbb8729567064b67132f2fda4f8b91882e7216ac6414d9d5515aa5bd971ba49129d737f1f7dae984f331fdf99b1f7dd940ca4cc9a50158082955c9eac81a895d203bfd8012eeefae64fdbcf09055898501f1cfde964088059660ad589bbf2e8280d5404f30be39f75e34fefd519c5343dde680836c769f930428c935da41f5f91b53477f243e948655cba610ba2d499839787822336492c0041d3d81ec1f3f4a936c944dfea6d15795bdf0527b38f63fb156b463f6531e55f0aa6b2d1158583f15a4e6e00c202e996770144a9dc53ced242bf59f3202805be1410e73bf6fc46ce92f9d799e3779b49eb78288679962f40ca755801aed4fd8fd4172f075ac242b7669e6fcf611fc77589b03eedf3dd82e3b395d2953a8adf6f797ef36d7a667677c9cbe377de6b68d43202b4a84f02790d9199874c348e6c0ff7c9f1f1f6baed9594e3cace5e928f8c64e1c4aec167acc4319a7420d75996a9a3df395deabf176138e66ead326ebac1f3eaa852fc216cd755e954962b4119ab27bc54f151881cb23dcf5b645cb7a9d66e8d87a37e951af668b4047ce179398bad2b2b71d235886d93d9514a048d16682ef8243b8c90aeb4293dc999cc0e53c2d90dcd545cdac98a0845af77e571fb26506389c254b4f80e8cd19d66ad4eeaf3c995ad8d957e1e8bde47b7d1020b8894cac9fcb270c25bf9cbae2c43be661487f36b671ec1af2b405da01ad8a7acf551bd1b4477e4f1e57cd28f0ef84fe5f3382b25bc467b4c07f4989f853a882a34a4576cfb4f32b2dcbf28c31066ab5126934831d225ac916c0b4a6e66ef408b5c9885f9d2bd189560c9a10170523ce91dc0520ed0056e282526f0867204bfb6c0183c9aa2c74054fe093313192d3500e9422d5ab024e2b5a7da7cb98d4e46951201212b313f7379fccca56bc0565b4247c85a2bcd1ef031017077e15f14df52389558051868c209a7ef41d088752380f00b5746ad12fd958bf72dd3fb71304e9ca8ea574b9199a7623c5c9b1f66b930fe412ed38828414c64a13f0245eaf69c82117c2a24c03368aadd9296c9c20837d229e5620c89285be60f1b0f3de1318e9491cb33ea3cc52b8a6a0c50af795d37161e96f23c807ed3d28866bae634dc6fa6e0d4566751f353c26ae0a41b45041ac6520ac1d8949873b663f8b4f301d5988f93fcb5bb506af41971a57d2c9e9fabe840764086630cdf78c4953665bfcdd4fbbb6ccd663b1b2a2b6185acd7db86c3554572c305cd16ffda4ce2a94cd62b1ff6fbd8a3810bffcb945959c37683966ac70c106fc40ad721a341200b1c1c8dfdfca8bc5ee46f8c0efac75a94906511da86a97242dcf954a321e3d443a58a0ba5327392afbf4f82595b125a56a4d78a749cb05674e9149cc3f8cdf4781b02e8ae6c9de8533b4348e22394fa05233b18370dd8fddff87ad70f50d3157a3b315f3394a0f480527707c1e05aa736d77b64cd650b5422d6be9e2ac1c23d7a7e929740c04e5abcd17a712fd2f3beb1076d006f0bb8f0fffaf676f7477829207937795ab3a8e7398e2e34b0da1f0df8f78640f7eba1974d4d01441409203d8e4cfed6408d219fd084d0dd96857f68fec0ff7d5d921afec3cba5e5d31353bf85b7c1d3a3da681de4079c070d358dc3f4f381be407e7f7ccb0d0cfb2dfa62b4913ddee1d986513c7bd2833590508c7271e87131a9ee90704f94cd89da6381eed03bf86eeece11f5b7f99f8c7882b8e3ca827ee6af06f9dc39585c941857995938628a88929a40e8f43dcc3b42318b702bdef59bc0fb3cff03d131916103e3b7e9561b04a2f2b014e37ac7cdb0ac88e8fe933b14556a2ac40ddc118016100f958f7cfa661fcc4c4a2f7c5df9df9a552cabb3f5715c7e11386935418cc566dc4b7d527b6545f02ec8b255e96f7c77dc1ad6f1ef0ee54e17959c30f1b679c2a4ee5bb4ca334ed3ba344ee2c478f270e1fc6235d2ebb902eb0623d0203cb919472c2b8e0c3a28b64b3a8ff20fd0487b7d93b7c2d5e9697a23c251c9ef581ac84a092ace5e6ba2b646bced9fcdd690d8e014e90f1ee4cda0eb57d0ab291756275b51c01305000958d4024e1c0ad2f885a9ed806b5b8b9c2e464bd0b91104f8b16d196774f3c7bfb7e0a228529465b03d97f72fe7f22d58ffd4c906b91d55a5282d4e7e4a5a8cdfb494642a85e6710b338cd7f04cd7348d5c43f99faab503ea410c5e90a4215a657ddfd5c053e918a542bebd3f83f1a2b9aba9b719594fe96454b6cb23e097a7921c3b711ee0752bb0c00160f9d3e1b109ec747c4255871b02d83e6bab7a42a1fe7141677f856a8d2df32fb0a1da60415d24543c02435e0916d1716428e0c836a52515f0c839be497a922536ff07978d21cae4fc0abb7cfa586c9b88f5426af5c1418639c2899c19ad7cb1fa23fafd7658bb6b3ca62021777f97f76a47aeb88955ad86e89bb8f95a2a2677ea7cf41df2ab821b82992a19534fad56fee6d60717c8853c2c2b84db58607344e096a631c5162fd0b2ebc83568d5402da32b7483ca42fb67e204aa119bb714f71ed7039b2d283d21241d13516edc4a0ff7ab209c183d058d29e5adefb1105b53418dbbad1df37472ea2ee08efc280305c6d0d201dd91b1d9d25d72ec4caf2abbc5223f51c39adc98548f5240aca30345dad0aad211a6bd00f7d2a62f6448b6aab3f7351f9cf96272b8b6ddb023cefcbabf89817b119d8f70aa87954bce57a9c6298531b5955dcf9850a3dace298469071a959295f71c0afd7771ed4d8966b9e81624e8f4dc2251a4679b61d8d1b003b32cc2500ecf24f397cff78d4b21ed17b9e1fb263cbe86f3bec06ca6ec6e020bdaa08a9d6e3078cff9b90fd9d25c7a2077a4303906607892dda2aa7ea2023c8d17ea2cda1ffd8fa416f1c0b7a63cff4adefe1a4d675069916db28807a50a9a83fe191e639d418d465c7c716f5aefe676d590ba5b26c1589f2916a38b1204062c5b9c02bb69062b17aed815db56480f3baac01b544b8ebe19677f64e378639e93b4b2deabf58fdb6916e45b298cfb49c28bccb3226486679169341f641a4d20f675a6c09fee8c7768cf712be50b6f9ff70eba25be7de595050483405970af66f579c643678ae80e1510b6f1eff3e221bc7bb86726d051d7c5fb58820dd2f5ce89d627a017dd4bc26a98244f1c62117c493097756be0f4c1c89927a6dc7b008bfa14213b3e3920fe021b87de5d11de433b28a528c1358438df967f938f66d6468fbcd2c90c7ec959a88d02dd831504154620e7766e967963fe52874afeda408bedc23f6a0c9a4084d48fbe31e4d22510be18478e7eedafe4ce6d69f6b0f93b61dce0a8f3dba6eb3f6c38fbbec025d6070e5df64b0ff5efb2a47fde46b0fade1f65ec48f7dd2a75aa81bd4c1dc6e1389ecdf07e88afc13868e2bf44af9842c33ba75bece4d6021d5f2ee016957f54737eac8a899d3fe011b0dfe75b7b308ad9b4e4804337e6f62b889a294a1b104781b63558356c76511e2557b27595a53cd69462ce1136e71c5a28b68b94ea979ca5b49e6dba819</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+        </div>
+        <footer class="article-footer">
+            
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?'];</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
+
+        </footer>
+        
+    <section id="comments">
+    
+        
+    <!-- Valine -->
+    <div class="vcomments"></div>
+
+
+    
+    </section>
+
+
+        
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "EduUnited"
+        },
+        "headline": "wyc-错题总结-C34-三角函数",
+        "image": "http://EduUnited.org",
+        "keywords": "wyc 三角函数 C34",
+        "genre": "学员区 错题总结",
+        "datePublished": "2020-06-15",
+        "dateCreated": "2020-06-15",
+        "dateModified": "2020-09-07",
+        "url": "http://EduUnited.org/2020/06/15/wyc-cuoti-C34-trig/",
+        "description": "学员资料",
+        "wordCount": 31
+    }
+</script>
+
+</article>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="qq" href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1850929975&website=www.oicqzone.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-qq"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="https://weibo.com/5713231301/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+            <li style="color:white;">微信:EduUnitedDotNet</li>
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2020/06/15/wyc-cuoti-C34-integration/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            wyc-错题总结-C34-integration
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2020/06/15/wyc-cuoti-C34-logrithm/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">wyc-cuoti-c34-logrithm, exponential</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/09/07/wyc-cuoti-S2-hypothesis-testing/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/">学员区</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/%E9%94%99%E9%A2%98%E6%80%BB%E7%BB%93/">错题总结</a></p>
+                            <p class="item-title"><a href="/2020/09/07/wyc-cuoti-S2-hypothesis-testing/" class="title">wyc-S2-Hypothesis Testing</a></p>
+                            <p class="item-date"><time datetime="2020-09-07T09:42:33.000Z" itemprop="datePublished">2020-09-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/09/07/wyc-cuoti-C12-others/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/">学员区</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/%E9%94%99%E9%A2%98%E6%80%BB%E7%BB%93/">错题总结</a></p>
+                            <p class="item-title"><a href="/2020/09/07/wyc-cuoti-C12-others/" class="title">wyc-C12粗心错</a></p>
+                            <p class="item-date"><time datetime="2020-09-07T09:37:57.000Z" itemprop="datePublished">2020-09-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/06/20/wyc-cuoti-C12-raidan/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/">学员区</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/%E9%94%99%E9%A2%98%E6%80%BB%E7%BB%93/">错题总结</a></p>
+                            <p class="item-title"><a href="/2020/06/20/wyc-cuoti-C12-raidan/" class="title">wyc-错题总结-C12-Radian</a></p>
+                            <p class="item-date"><time datetime="2020-06-20T12:57:52.000Z" itemprop="datePublished">2020-06-20</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/06/20/wyc-cuoti-C34-Shengbuzhou/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/">学员区</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/%E9%94%99%E9%A2%98%E6%80%BB%E7%BB%93/">错题总结</a></p>
+                            <p class="item-title"><a href="/2020/06/20/wyc-cuoti-C34-Shengbuzhou/" class="title">wyc-错题总结-C34-省步骤</a></p>
+                            <p class="item-date"><time datetime="2020-06-20T12:52:13.000Z" itemprop="datePublished">2020-06-20</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/06/20/wyc-cuoti-S2-others/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/">学员区</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/%E9%94%99%E9%A2%98%E6%80%BB%E7%BB%93/">错题总结</a></p>
+                            <p class="item-title"><a href="/2020/06/20/wyc-cuoti-S2-others/" class="title">wyc-错题总结-S2-Others</a></p>
+                            <p class="item-date"><time datetime="2020-06-20T12:48:02.000Z" itemprop="datePublished">2020-06-20</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">网站内容分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%BB%A5%E8%87%B4%E7%94%A8/">学以致用</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E7%BB%8F%E6%B5%8E%E5%AD%A6/">经济学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E8%8B%B1%E8%AF%AD/">英语</a><span class="category-list-count">5</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/">学员区</a><span class="category-list-count">41</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/A2%E7%BB%8F%E6%B5%8E/">A2经济</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/AS%E7%BB%8F%E6%B5%8E/">AS经济</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E5%91%98%E5%8C%BA/%E9%94%99%E9%A2%98%E6%80%BB%E7%BB%93/">错题总结</a><span class="category-list-count">31</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%B0%E9%97%BB/">新闻</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%B0%E9%97%BB/%E6%95%99%E8%82%B2/">教育</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%B5%84%E6%96%99/">资料</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%B5%84%E6%96%99/%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D/">大学排名</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a><span class="archive-list-count">29</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a><span class="archive-list-count">14</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/A2%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%91%98/" rel="tag">A2经济学员</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/A2%E7%BB%8F%E6%B5%8E%E8%AE%BA%E6%96%87/" rel="tag">A2经济论文</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/A2%E8%AE%BA%E6%96%87/" rel="tag">A2论文</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AS%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%91%98/" rel="tag">AS经济学员</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AS%E7%BB%8F%E6%B5%8E%E5%AE%A1%E9%A2%98/" rel="tag">AS经济审题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AS%E7%BB%8F%E6%B5%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" rel="tag">AS经济数据分析</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AS%E7%BB%8F%E6%B5%8E%E8%AE%BA%E6%96%87/" rel="tag">AS经济论文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AS%E7%BB%8F%E6%B5%8E%E9%80%89%E6%8B%A9/" rel="tag">AS经济选择</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AS%E9%80%89%E6%8B%A9/" rel="tag">AS选择</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C12/" rel="tag">C12</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C34/" rel="tag">C34</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Differentiation%E5%BE%AE%E5%88%86/" rel="tag">Differentiation微分</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Discrete-Distribution/" rel="tag">Discrete-Distribution</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Function%E5%87%BD%E6%95%B0/" rel="tag">Function函数</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hypothesis-Testing/" rel="tag">Hypothesis-Testing</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InternationalTrade/" rel="tag">InternationalTrade</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSENews/" rel="tag">LSENews</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Normal-Distribution/" rel="tag">Normal-Distribution</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Numerical-Method/" rel="tag">Numerical-Method</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Parametric/" rel="tag">Parametric</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Probability%E6%A6%82%E7%8E%87/" rel="tag">Probability概率</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Proof%E8%AF%81%E6%98%8E/" rel="tag">Proof证明</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Radian/" rel="tag">Radian</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/S1/" rel="tag">S1</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/S2/" rel="tag">S2</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Statistics-Parameters/" rel="tag">Statistics-Parameters</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vector/" rel="tag">Vector</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/binomial/" rel="tag">binomial</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/binomial-expansion/" rel="tag">binomial-expansion</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cdf-pdf/" rel="tag">cdf-pdf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/correlation/" rel="tag">correlation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/developing/" rel="tag">developing</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inflation/" rel="tag">inflation</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/integration/" rel="tag">integration</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/logrithm/" rel="tag">logrithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macroeconomics/" rel="tag">macroeconomics</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/multiplier/" rel="tag">multiplier</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poisson/" rel="tag">poisson</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/uniform-distribution/" rel="tag">uniform-distribution</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/variance/" rel="tag">variance</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wyc/" rel="tag">wyc</a><span class="tag-list-count">31</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/" rel="tag">三角函数</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%A6%E6%95%A6%E6%94%BF%E7%BB%8F%E6%96%B0%E9%97%BB/" rel="tag">伦敦政经新闻</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%91%E5%B1%95%E4%B8%AD%E5%9B%BD%E5%AE%B6/" rel="tag">发展中国家</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BD%E9%99%85%E8%B4%B8%E6%98%93/" rel="tag">国际贸易</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%BB%A5%E8%87%B4%E7%94%A8/" rel="tag">学以致用</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E/" rel="tag">宏观经济</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%8F%E8%A7%82%E8%AE%BA%E6%96%87/" rel="tag">宏观论文</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/" rel="tag">平面几何</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%8F%E5%88%97/" rel="tag">序列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E5%88%86/" rel="tag">微分</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E8%82%B2%E6%96%B0%E9%97%BB/" rel="tag">教育新闻</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%B0%E9%97%BB/" rel="tag">新闻</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9C%81%E6%AD%A5%E9%AA%A4/" rel="tag">省步骤</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B2%97%E5%BF%83%E9%94%99/" rel="tag">粗心错</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E6%B5%8E/" rel="tag">经济</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E6%B5%8E%E6%A6%82%E5%BF%B5/" rel="tag">经济概念</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E6%B5%8E%E7%9F%A5%E8%AF%86%E5%BA%94%E7%94%A8/" rel="tag">经济知识应用</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D/" rel="tag">英国大学排名</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E5%9B%BD%E7%95%99%E5%AD%A6/" rel="tag">英国留学</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D/" rel="tag">英语单词</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80/" rel="tag">通货膨胀</a><span class="tag-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/A2%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%91%98/" style="font-size: 11.43px;">A2经济学员</a> <a href="/tags/A2%E7%BB%8F%E6%B5%8E%E8%AE%BA%E6%96%87/" style="font-size: 12.86px;">A2经济论文</a> <a href="/tags/A2%E8%AE%BA%E6%96%87/" style="font-size: 11.43px;">A2论文</a> <a href="/tags/AS%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%91%98/" style="font-size: 14.29px;">AS经济学员</a> <a href="/tags/AS%E7%BB%8F%E6%B5%8E%E5%AE%A1%E9%A2%98/" style="font-size: 10px;">AS经济审题</a> <a href="/tags/AS%E7%BB%8F%E6%B5%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" style="font-size: 10px;">AS经济数据分析</a> <a href="/tags/AS%E7%BB%8F%E6%B5%8E%E8%AE%BA%E6%96%87/" style="font-size: 10px;">AS经济论文</a> <a href="/tags/AS%E7%BB%8F%E6%B5%8E%E9%80%89%E6%8B%A9/" style="font-size: 10px;">AS经济选择</a> <a href="/tags/AS%E9%80%89%E6%8B%A9/" style="font-size: 10px;">AS选择</a> <a href="/tags/C12/" style="font-size: 18.57px;">C12</a> <a href="/tags/C34/" style="font-size: 18.57px;">C34</a> <a href="/tags/Differentiation%E5%BE%AE%E5%88%86/" style="font-size: 10px;">Differentiation微分</a> <a href="/tags/Discrete-Distribution/" style="font-size: 11.43px;">Discrete-Distribution</a> <a href="/tags/Function%E5%87%BD%E6%95%B0/" style="font-size: 11.43px;">Function函数</a> <a href="/tags/Hypothesis-Testing/" style="font-size: 10px;">Hypothesis-Testing</a> <a href="/tags/InternationalTrade/" style="font-size: 10px;">InternationalTrade</a> <a href="/tags/LSENews/" style="font-size: 10px;">LSENews</a> <a href="/tags/Normal-Distribution/" style="font-size: 10px;">Normal-Distribution</a> <a href="/tags/Numerical-Method/" style="font-size: 10px;">Numerical-Method</a> <a href="/tags/Parametric/" style="font-size: 10px;">Parametric</a> <a href="/tags/Probability%E6%A6%82%E7%8E%87/" style="font-size: 10px;">Probability概率</a> <a href="/tags/Proof%E8%AF%81%E6%98%8E/" style="font-size: 10px;">Proof证明</a> <a href="/tags/Radian/" style="font-size: 10px;">Radian</a> <a href="/tags/S1/" style="font-size: 17.14px;">S1</a> <a href="/tags/S2/" style="font-size: 15.71px;">S2</a> <a href="/tags/Statistics-Parameters/" style="font-size: 10px;">Statistics-Parameters</a> <a href="/tags/Vector/" style="font-size: 10px;">Vector</a> <a href="/tags/binomial/" style="font-size: 10px;">binomial</a> <a href="/tags/binomial-expansion/" style="font-size: 10px;">binomial-expansion</a> <a href="/tags/cdf-pdf/" style="font-size: 10px;">cdf-pdf</a> <a href="/tags/correlation/" style="font-size: 10px;">correlation</a> <a href="/tags/developing/" style="font-size: 10px;">developing</a> <a href="/tags/inflation/" style="font-size: 11.43px;">inflation</a> <a href="/tags/integration/" style="font-size: 10px;">integration</a> <a href="/tags/logrithm/" style="font-size: 10px;">logrithm</a> <a href="/tags/macroeconomics/" style="font-size: 15.71px;">macroeconomics</a> <a href="/tags/multiplier/" style="font-size: 10px;">multiplier</a> <a href="/tags/poisson/" style="font-size: 10px;">poisson</a> <a href="/tags/uniform-distribution/" style="font-size: 10px;">uniform-distribution</a> <a href="/tags/variance/" style="font-size: 10px;">variance</a> <a href="/tags/wyc/" style="font-size: 20px;">wyc</a> <a href="/tags/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/" style="font-size: 12.86px;">三角函数</a> <a href="/tags/%E4%BC%A6%E6%95%A6%E6%94%BF%E7%BB%8F%E6%96%B0%E9%97%BB/" style="font-size: 10px;">伦敦政经新闻</a> <a href="/tags/%E5%8F%91%E5%B1%95%E4%B8%AD%E5%9B%BD%E5%AE%B6/" style="font-size: 10px;">发展中国家</a> <a href="/tags/%E5%9B%BD%E9%99%85%E8%B4%B8%E6%98%93/" style="font-size: 10px;">国际贸易</a> <a href="/tags/%E5%AD%A6%E4%BB%A5%E8%87%B4%E7%94%A8/" style="font-size: 10px;">学以致用</a> <a href="/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E/" style="font-size: 14.29px;">宏观经济</a> <a href="/tags/%E5%AE%8F%E8%A7%82%E8%AE%BA%E6%96%87/" style="font-size: 11.43px;">宏观论文</a> <a href="/tags/%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/" style="font-size: 10px;">平面几何</a> <a href="/tags/%E5%BA%8F%E5%88%97/" style="font-size: 10px;">序列</a> <a href="/tags/%E5%BE%AE%E5%88%86/" style="font-size: 10px;">微分</a> <a href="/tags/%E6%95%99%E8%82%B2%E6%96%B0%E9%97%BB/" style="font-size: 10px;">教育新闻</a> <a href="/tags/%E6%96%B0%E9%97%BB/" style="font-size: 10px;">新闻</a> <a href="/tags/%E7%9C%81%E6%AD%A5%E9%AA%A4/" style="font-size: 11.43px;">省步骤</a> <a href="/tags/%E7%B2%97%E5%BF%83%E9%94%99/" style="font-size: 10px;">粗心错</a> <a href="/tags/%E7%BB%8F%E6%B5%8E/" style="font-size: 10px;">经济</a> <a href="/tags/%E7%BB%8F%E6%B5%8E%E6%A6%82%E5%BF%B5/" style="font-size: 10px;">经济概念</a> <a href="/tags/%E7%BB%8F%E6%B5%8E%E7%9F%A5%E8%AF%86%E5%BA%94%E7%94%A8/" style="font-size: 10px;">经济知识应用</a> <a href="/tags/%E8%8B%B1%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D/" style="font-size: 10px;">英国大学排名</a> <a href="/tags/%E8%8B%B1%E5%9B%BD%E7%95%99%E5%AD%A6/" style="font-size: 10px;">英国留学</a> <a href="/tags/%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D/" style="font-size: 15.71px;">英语单词</a> <a href="/tags/%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80/" style="font-size: 11.43px;">通货膨胀</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">外部链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="https://www.ucl.ac.uk" target="_blank" rel="noopener">帝国理工大学官网</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.ucas.com" target="_blank" rel="noopener">英国大学申请UCAS官网</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <p>QQ:1850929975; 微信:EduUnitedDotNet</p>
+                <span id="busuanzi_container_site_uv">
+                本站访客数<span id="busuanzi_value_site_uv"></span>人次
+                </span>
+                <p>&copy; 2020 EduUnited. 
+                
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <div class="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="/js/Valine.min.js"></script>
+    <script type="text/javascript">
+    
+        new Valine({
+            lang: 'zh-cn',
+            admin_email: '填写博主邮箱',
+            el: '.vcomments' ,
+            appId: "VEem8DykTtO9eYIejGS03jKH-gzGzoHsz",
+            appKey: "V8j9xbuf28RQENwo5MTc33k0",
+            emoticon_url: 'https://cloud.panjunwen.com/alu',
+            emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+            placeholder: "有问题在这里提问"
+        });
+    </script>
+
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
